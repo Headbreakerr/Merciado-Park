@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tickets & Family Packs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: url(../Images/kieran-white-ApBBVS2csbY-unsplash.jpg);
+        background-size: 150vh;
+        background-repeat: no-repeat;
+        color: yellow;
+      }
+      .bg {
+        position: absolute;
+        z-index: -99;
+        height: 100%;
+        width: 50%;
+      }
+      .row {
+        display: flex;
+      }
+      .bttn {
+        width: 100% !important;
+        margin-left: auto;
+        color: transparent;
+        font-size: larger;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+      }
+      button {
+        width: 500px;
+      }
+
+      .container {
+        margin-top: 50px;
+      }
+      /* input {
+        margin-bottom: 50px;
+      } */
+      @media screen and (max-width: 600px) {
+        .row {
+          flex-direction: column;
+        }
+      }
+      .ag-format-container {
+        width: 1142px;
+        margin: 0 auto;
+      }
+
+      body {
+        background-color: #000;
+      }
+      .deals {
+        margin-top: 100px;
+        font-family: "PT Sans", sans-serif;
+      }
+      h1 {
+        margin-left: 20%;
+      }
+      .ag-courses_box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+        padding: 50px 0;
+      }
+      .ag-courses_item {
+        -ms-flex-preferred-size: calc(33.33333% - 30px);
+        flex-basis: calc(33.33333% - 30px);
+
+        margin: 0 15px 30px;
+
+        overflow: hidden;
+
+        border-radius: 28px;
+      }
+      .ag-courses-item_link {
+        display: block;
+        padding: 30px 20px;
+        background-color: #121212;
+
+        overflow: hidden;
+
+        position: relative;
+      }
+      .ag-courses-item_link:hover,
+      .ag-courses-item_link:hover .ag-courses-item_date {
+        text-decoration: none;
+        color: #fff;
+      }
+      .ag-courses-item_link:hover .ag-courses-item_bg {
+        -webkit-transform: scale(10);
+        -ms-transform: scale(10);
+        transform: scale(10);
+      }
+      .ag-courses-item_title {
+        min-height: 87px;
+        margin: 0 0 25px;
+
+        overflow: hidden;
+
+        font-weight: bold;
+        font-size: 30px;
+        color: #fff;
+
+        z-index: 2;
+        position: relative;
+      }
+      .ag-courses-item_date-box {
+        font-size: 18px;
+        color: #fff;
+
+        z-index: 2;
+        position: relative;
+      }
+      .ag-courses-item_date {
+        font-weight: bold;
+        color: #f9b234;
+
+        -webkit-transition: color 0.5s ease;
+        -o-transition: color 0.5s ease;
+        transition: color 0.5s ease;
+      }
+      .ag-courses-item_bg {
+        height: 128px;
+        width: 128px;
+        background-color: #f9b234;
+
+        z-index: 1;
+        position: absolute;
+        top: -75px;
+        right: -75px;
+
+        border-radius: 50%;
+
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+      }
+      .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+        background-color: #3ecd5e;
+      }
+      .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+        background-color: #e44002;
+      }
+      .ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+        background-color: #952aff;
+      }
+      .ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+        background-color: #cd3e94;
+      }
+      .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+        background-color: #4c49ea;
+      }
+
+      @media only screen and (max-width: 979px) {
+        .ag-courses_item {
+          -ms-flex-preferred-size: calc(50% - 30px);
+          flex-basis: calc(50% - 30px);
+        }
+        .ag-courses-item_title {
+          font-size: 24px;
+        }
+      }
+
+      @media only screen and (max-width: 767px) {
+        .ag-format-container {
+          width: 96%;
+        }
+      }
+      @media only screen and (max-width: 639px) {
+        .ag-courses_item {
+          -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+        }
+        .ag-courses-item_title {
+          min-height: 72px;
+          line-height: 1;
+
+          font-size: 24px;
+        }
+        .ag-courses-item_link {
+          padding: 22px 40px;
+        }
+        .ag-courses-item_date-box {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="bg">
+      <video
+        src="../Videos/TicketBookingBackground.mp4"
+        autoplay
+        width="1000"
+        height="1000"
+      ></video>
+    </div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="form-outline">
+            <label class="form-label" for="Name">Enter your Name</label>
+            <input type="text" id="Name" class="form-control" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <label class="form-label" for="Email">Email address</label>
+            <input type="email" class="form-control" id="Email" />
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col">
+          <div class="form-outline">
+            <label class="form-label">Number of People</label>
+            <input type="text" class="form-control" id="People" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <label class="form-label">Date of Arrival</label>
+            <input type="date" class="form-control" id="Date" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <label class="form-label">Your Phone Number</label>
+            <input type="text" class="form-control" id="Number" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bttn">
+      <button class="btn btn-block btn-warning btn-large">
+        Book My Tickets
+      </button>
+    </div>
+    <div class="deals">
+      <h1>Bring Your Family & Get Amazing Deals</h1>
+      <div class="ag-format-container">
+        <div class="ag-courses_box">
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+
+              <div class="ag-courses-item_title">
+                Entry <br />3 Rides <br />2 Tokens for Merciless Zone <br />
+                Karaoke <br />
+                3 Meals <br />
+                1 Train Ride
+              </div>
+
+              <div class="ag-courses-item_date-box">
+                Available only:
+                <span class="ag-courses-item_date"> 20th June, 2023 </span>
+              </div>
+              <div class="ag-courses-item_date-box">
+                Price:
+                <span class="ag-courses-item_date"> $79.99 </span>
+              </div>
+            </a>
+          </div>
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+
+              <div class="ag-courses-item_title">
+                Entry <br />5 Rides <br />3 Tokens for Merciless Zone <br />
+                Karaoke <br />3 Meals <br />
+                1 Train Ride <br />
+              </div>
+
+              <div class="ag-courses-item_date-box">
+                Available only:
+                <span class="ag-courses-item_date"> 20th June, 2023 </span>
+              </div>
+              <div class="ag-courses-item_date-box">
+                Price:
+                <span class="ag-courses-item_date"> $99.99 </span>
+              </div>
+            </a>
+          </div>
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+
+              <div class="ag-courses-item_title">
+                Entry <br />10 Rides <br />10 Tokens for Merciless Zone <br />
+                Karaoke <br />
+                5 Meals <br />
+                Unlimited Train Rides
+              </div>
+
+              <div class="ag-courses-item_date-box">
+                Available only:
+                <span class="ag-courses-item_date"> 20th June, 2023 </span>
+              </div>
+              <div class="ag-courses-item_date-box">
+                Price:
+                <span class="ag-courses-item_date"> $149.99 </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
