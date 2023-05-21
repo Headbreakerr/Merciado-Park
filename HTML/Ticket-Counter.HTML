@@ -68,8 +68,18 @@
         margin-top: 100px;
         font-family: "PT Sans", sans-serif;
       }
-      h1 {
-        margin-left: 20%;
+      .h1 {
+        display: flex;
+        justify-content: center;
+        font-weight: bolder;
+      }
+      .display-3 {
+        font-weight: bolder;
+        text-align: center;
+        transition: 1s;
+      }
+      .display-3:hover {
+        color: #3ecd5e;
       }
       .ag-courses_box {
         display: -webkit-box;
@@ -259,7 +269,9 @@
       </button>
     </div>
     <div class="deals">
-      <h1>Bring Your Family & Get Amazing Deals</h1>
+      <div class="h1"></div>
+      <h1 class="display-3">Bring Your Family & Get Amazing Deals</h1>
+
       <div class="ag-format-container">
         <div class="ag-courses_box">
           <div class="ag-courses_item">
@@ -274,7 +286,7 @@
               </div>
 
               <div class="ag-courses-item_date-box">
-                Available only:
+                Available from:
                 <span class="ag-courses-item_date"> 20th June, 2023 </span>
               </div>
               <div class="ag-courses-item_date-box">
@@ -294,7 +306,7 @@
               </div>
 
               <div class="ag-courses-item_date-box">
-                Available only:
+                Available from:
                 <span class="ag-courses-item_date"> 20th June, 2023 </span>
               </div>
               <div class="ag-courses-item_date-box">
@@ -315,7 +327,7 @@
               </div>
 
               <div class="ag-courses-item_date-box">
-                Available only:
+                Available from:
                 <span class="ag-courses-item_date"> 20th June, 2023 </span>
               </div>
               <div class="ag-courses-item_date-box">
