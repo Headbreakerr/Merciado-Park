@@ -6,6 +6,7 @@
 }
 body {
   background: url(../Images/kieran-white-ApBBVS2csbY-unsplash.jpg);
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   color: yellow;

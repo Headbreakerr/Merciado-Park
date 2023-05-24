@@ -159,3 +159,8 @@ li {
   background: -webkit-linear-gradient(left, #54d400 48%, #1b1e21 48%);
   background: linear-gradient(45deg, #54d400 48%, #1b1e21 48%);
 }
+.dropdown-toggle{
+  width: 100px !important;
+  background-color: transparent !important;
+  border: 0px  !important;
+}
