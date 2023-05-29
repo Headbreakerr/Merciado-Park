@@ -1,65 +1,13 @@
+body {
+  background: url(../Images/);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .white {
   color: rgb(219, 215, 215);
 }
-/* .card {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  color: #2e2d31;
-  overflow: hidden;
-  border-radius: 20px;
-}
-.temp-text {
-  font-weight: bold;
-  font-style: 24px;
-  padding: 6px 12px;
-  color: #f8f8f8;
-}
-.title {
-  font-weight: bold;
-}
-.card-content {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 20px;
-  background: #f2f2f2;
-  border-top-left-radius: 20px;
-  transform: translateY(150px);
-  transition: transform 0.25s;
-}
-.card-content::before {
-  content: "";
-  position: absolute;
-  top: -47px;
-  right: -45px;
-  width: 100px;
-  height: 100px;
-  transform: rotate(-175deg);
-  border-radius: 50%;
-  box-shadow: inset 48px 48px #f2f2f2;
-}
-.title {
-  color: #131313;
-  line-height: 15px;
-}
-.subtitle {
-  display: block;
-  font-style: 12px;
-  margin-bottom: 10px;
-}
-.description {
-  font-style: 14px;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-.card:hover .card-content {
-  transform: translateY(0);
-}
-card:hover .description {
-  opacity: 1;
-  transition-delay: 0.25s;
-} */
+
 .card {
   position: relative;
   width: 350px;
@@ -69,6 +17,7 @@ card:hover .description {
   overflow: hidden;
   border-radius: 20px;
 }
+
 .t-cap {
   animation: goingUp;
   animation-duration: 2s;
@@ -103,6 +52,15 @@ card:hover .description {
 }
 #c {
   background-image: url(../Images/Bumpercarspics/Bumper\ cars\ 4.jpg);
+}
+#d {
+  background-image: url(../Images/Pendulumridepics/Pendulum\ ride\ 3.jpg);
+}
+#e {
+  background-image: url(../Images/PiratesoftheCaribbeanridepics/Pirates\ of\ the\ Caribbean\ 4.jpg);
+}
+#f {
+  background-image: url(../Images/RevengeofMummytheridepics/Revenge\ of\ Mummy\ 4.jpg);
 }
 .card_title {
   font-weight: bold;
@@ -158,4 +116,177 @@ card:hover .description {
 .card:hover .card_description {
   opacity: 1;
   transition-delay: 0.25s;
+}
+.tkt {
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: #c79600;
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.tkt span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 4px solid #c79600;
+}
+
+.tkt span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+}
+
+.tkt:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: #c79600;
+}
+
+.tkt:hover {
+  color: white;
+}
+
+.tkt:active span::before {
+  background: #c79600;
+}
+.NoUnder {
+  text-decoration: none;
+}
+.NoUnder:hover {
+  text-decoration: none;
+}
+footer {
+  margin-top: 50px;
+  background-color: #1b1e21;
+  width: 100%;
+  height: 330px;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+.f-items {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .f-items {
+    flex-direction: column;
+  }
+  footer {
+    height: 100%;
+  }
+}
+
+.f-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+.f-line {
+  width: 200px;
+  height: 100px;
+  border: 1px 0 0 0 solid #54d400;
+}
+.f-head {
+  display: flex;
+  color: #54d400;
+}
+.f-head > h2 {
+  font-family: "Fasthand", cursive;
+  font-size: xx-large;
+}
+.hr {
+  padding: 0;
+  border: 1px solid #54d400;
+  width: 50px;
+  height: 1px;
+  margin: 30px 0 0 10px;
+}
+.New-ul {
+  list-style: none;
+}
+.New-ul li {
+  padding: 10px;
+  /* margin-top: 20px; */
+}
+.New-ul li::before {
+  content: "\00BB";
+}
+.New-ul > li > a {
+  text-decoration: none;
+  color: #fff;
+}
+.New-ul > li > a:hover {
+  text-decoration: underline;
+}
+.icons {
+  padding: 10px;
+}
+.icons > i {
+  padding-right: 10px;
+}
+.social {
+  margin-left: 10px;
+}
+.social-icons {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 10px;
+}
+.social-icons:hover {
+  background-color: #fff;
+  color: #000 !important;
+}
+.open {
+  padding-top: 10px;
+}
+.newsletter {
+  padding-top: 10px;
+}
+#News {
+  height: 40px;
+  width: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 0;
+}
+::placeholder {
+  font-weight: bolder;
+}
+input[type="submit"] {
+  color: #1b1e21;
+  height: 30px;
+  width: 80px;
+  background-color: #54d400;
+  padding: 2px;
+  border: 1px solid #ffca2c;
+  margin-left: -95px;
+  border-radius: 20px;
+}
+input[type="submit"]:hover {
+  background-color: white;
+  color: #54d400;
+  font-family: "Montserrat", sans-serif;
 }
