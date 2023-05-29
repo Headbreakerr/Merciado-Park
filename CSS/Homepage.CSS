@@ -64,19 +64,46 @@ card:hover .description {
   position: relative;
   width: 350px;
   height: 350px;
-  color: #2e2d31;
+  color: #fff;
   background: #131313;
   overflow: hidden;
   border-radius: 20px;
+}
+.t-cap {
+  animation: goingUp;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+  animation: float 2s infinite linear iteration-count direction fill-mode;
+}
+
+@keyframes goingUp {
+  0% {
+    bottom: -50px;
+  }
+
+  100% {
+    bottom: 20px;
+  }
 }
 
 .temporary_text {
   font-weight: bold;
   font-size: 24px;
   padding: 6px 12px;
-  color: #f8f8f8;
+  color: transparent;
+  /* background-image: url(../Images/BG\ Tickets.jpg); */
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-
+#a {
+  background-image: url(../Images/BG\ Tickets.jpg);
+}
+#b {
+  background-image: url(../Images/Medusaridepics/Medusa\ 1.jpg);
+}
+#c {
+  background-image: url(../Images/Bumpercarspics/Bumper\ cars\ 4.jpg);
+}
 .card_title {
   font-weight: bold;
 }
@@ -88,7 +115,7 @@ card:hover .description {
   /* edit the width to fit card */
   width: 100%;
   padding: 20px;
-  background: #f2f2f2;
+  background-color: #181b1d;
   border-top-left-radius: 20px;
   /* edit here to change the height of the content box */
   transform: translateY(150px);
@@ -104,11 +131,11 @@ card:hover .description {
   height: 100px;
   transform: rotate(-175deg);
   border-radius: 50%;
-  box-shadow: inset 48px 48px #f2f2f2;
+  box-shadow: inset 48px 48px #181b1d;
 }
 
 .card_title {
-  color: #131313;
+  color: #fff;
   line-height: 15px;
 }
 
