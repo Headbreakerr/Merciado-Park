@@ -1,5 +1,6 @@
 body {
-  background: url(../Images/);
+  background: linear-gradient(to right, #43c6ac, #f8ffae);
+  /* color: white; */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -197,8 +198,37 @@ footer {
   footer {
     height: 100%;
   }
+  .fd-c {
+    flex-direction: column;
+  }
+  .mt {
+    margin-top: 10px;
+  }
 }
 
+@media screen and (max-width: 900px) {
+  .fd-c {
+    flex-direction: column;
+    align-items: center;
+  }
+  hr {
+    display: none;
+  }
+  #mt-5 {
+    margin-top: 10px;
+  }
+  .mt {
+    margin-top: 10px;
+  }
+  footer {
+    height: 100%;
+  }
+  .f-items {
+    flex-direction: column;
+    /* background-color: #181b1d; */
+    height: 100%;
+  }
+}
 .f-item {
   display: flex;
   flex-direction: column;

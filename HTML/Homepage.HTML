@@ -1,112 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Merciado Amusement Park</title>
+    <link rel="website icon" href="../Images/LOGO.png" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>Title</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.css" />
+    <script src="../JS/bootstrap.js"></script>
+    <script src="../js/jquery.js"></script>
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/header2.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/Homepage.CSS" />
+  </head>
 
-  <link rel="stylesheet" href="../CSS/bootstrap.css" />
-  <script src="../JS/bootstrap.js"></script>
-  <script src="../js/jquery.js"></script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="../css/header2.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../CSS/Homepage.CSS" />
-</head>
-
-<body>
-  <div class="sticky-top">
-    <header class="topbar">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <ul class="social-network">
-              <li>
-                <a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a>
+  <body>
+    <div class="sticky-top">
+      <header class="topbar">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="social-network">
+                <li>
+                  <a class="waves-effect waves-dark" href="#"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="waves-effect waves-dark" href="#"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="waves-effect waves-dark" href="#"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="waves-effect waves-dark" href="#"
+                    ><i class="fa fa-pinterest"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="waves-effect waves-dark" href="#"
+                    ><i class="fa fa-google-plus"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+        <div class="container">
+          <a
+            class="navbar-brand"
+            href="./Ticket-Counter.HTML"
+            style="text-transform: uppercase"
+          >
+            <img src="../Images/LOGO.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler w-25"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home
+                  <span class="sr-only">(current)</span>
+                </a>
               </li>
-              <li>
-                <a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Zoo</a>
               </li>
-              <li>
-                <a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Merciless Zone</a>
               </li>
-              <li>
-                <a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a>
+
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">Aquarium</a> -->
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="triggerId"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Aquarium
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item disabled" href="#"
+                      >Disabled action</a
+                    >
+                    <h6 class="dropdown-header">Section header</h6>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">After divider action</a>
+                  </div>
+                </div>
               </li>
-              <li>
-                <a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Activities</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
           </div>
         </div>
-      </div>
-    </header>
-    <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
-      <div class="container">
-        <a class="navbar-brand" href="./Ticket-Counter.HTML" style="text-transform: uppercase">
-          <img src="../Images/LOGO.png" alt="" />
-        </a>
-        <button class="navbar-toggler w-25" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Zoo</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Merciless Zone</a>
-            </li>
-
-            <li class="nav-item">
-              <!-- <a class="nav-link" href="#">Aquarium</a> -->
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Aquarium
-                </button>
-                <div class="dropdown-menu" aria-labelledby="triggerId">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item disabled" href="#">Disabled action</a>
-                  <h6 class="dropdown-header">Section header</h6>
-                  <a class="dropdown-item" href="#">Action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">After divider action</a>
-                </div>
-              </div>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Activities</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#"></a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <header>
-  </header>
-  <main>
+      </nav>
+    </div>
+    <header></header>
+    <main>
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -186,15 +224,22 @@
         </div>
       </div>
     </div>
-    <h3 class="display-3 mx-5">Rides & Fun</h3>
+    <h3 class="display-3 mx-5">Rides & Fun</h3> <div class="container">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"
+      >
+       <path fill="#54d305" d="M0,96C60,80,240,48,480,48s420,32,660,16s420-48,660-48s420,48,660,64s420,0,480-16V0H0V96z">
+       </path>
+     </svg>
+    </div> 
     <div class="container">
       <p class="mx-5" style="font-style: oblique; font-size: larger">
         Have Fun on the following Rides on our Park and tell us How did you
         like them
       </p>
     </div>
-    <div class="container mt-5 d-flex justify-content-space-between">
-      <article class="card mx-5">
+    <div class="container mt-5 d-flex justify-content-space-between fd-c">
+      <article class="card mx-5 mt">
         <div class="temporary_text" id="a">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Praesentium illo nisi eius asperiores necessitatibus quis a
@@ -221,7 +266,7 @@
           </p>
         </div>
       </article>
-      <article class="card mx-5">
+      <article class="card mx-5 mt">
         <div class="temporary_text" id="b">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Praesentium illo nisi eius asperiores necessitatibus quis a
@@ -247,7 +292,7 @@
           </p>
         </div>
       </article>
-      <article class="card mx-5">
+      <article class="card mx-5 mt">
         <div class="temporary_text" id="c">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Praesentium illo nisi eius asperiores necessitatibus quis a
@@ -273,7 +318,7 @@
         </div>
       </article>
     </div>
-    <div class="container mt-5 d-flex justify-content-space-between">
+    <div class="container mt-5 d-flex justify-content-space-between fd-c">
       <article class="card mx-5">
         <div class="temporary_text" id="d">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -300,7 +345,7 @@
           </p>
         </div>
       </article>
-      <article class="card mx-5">
+      <article class="card mx-5 mt">
         <div class="temporary_text" id="e">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Praesentium illo nisi eius asperiores necessitatibus quis a
@@ -326,7 +371,7 @@
           </p>
         </div>
       </article>
-      <article class="card mx-5">
+      <article class="card mx-5 mt">
         <div class="temporary_text" id="f">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Praesentium illo nisi eius asperiores necessitatibus quis a
@@ -353,17 +398,21 @@
         </div>
       </article>
     </div>
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"
-     >
-      <path fill="#f1e6f3" d="M0,96C60,80,240,48,480,48s420,32,660,16s420-48,660-48s420,48,660,64s420,0,480-16V0H0V96z">
-      </path>
-    </svg> -->
-    <div class="container d-flex justify-content-center mt-5">
+   
+    <div class="container d-flex justify-content-center mt-5 fd-c">
       <h3 class="display-3">BOOKINGS & LOGIN</h3>
     </div>
-    <div class="container d-flex justify-content-center mt-5">
+    <div class="container d-flex justify-content-center mt-5 fd-c" id="mt-5">
       <div class="aside mx-5 w-50">
         <h3 class="display-6 ml-4">Book Tickets from this Page</h3 class="display-6">
+          
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"
+            >
+             <path fill="#c79600" d="M0,96C60,80,240,48,480,48s420,32,660,16s420-48,660-48s420,48,660,64s420,0,480-16V0H0V96z">
+             </path>
+           </svg>
+          
        
           <ol>
             <li><b>Guarantee availability:</b> By booking in advance, you secure your spot and ensure that tickets won't be sold out.</li>
@@ -376,7 +425,11 @@
       </div>
       <hr style="height:300px; border: 1px solid #000;">
       <div class="aside mx-5 w-50">
-        <h3 class="display-6">Or you can Login from here </h3 class="display-6">
+        <h3 class="display-6">Or you can Login from here </h3> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"
+        >
+         <path fill="#c79600" d="M0,96C60,80,240,48,480,48s420,32,660,16s420-48,660-48s420,48,660,64s420,0,480-16V0H0V96z">
+         </path>
+       </svg>
           <p><b>Personalized Experience:</b> Logging in allows us to customize your visit, providing personalized
             recommendations, discounts, and tailored content.
             <b>Seamless Booking:</b> With a logged-in account, you can easily book tickets, access reservation history, and make
@@ -469,13 +522,16 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

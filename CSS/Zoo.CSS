@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background: #d8d9da;
+}
+.container > img {
+  width: 70%;
+  height: 500px;
+  margin-left: 15%;
+}
+@media screen and (max-width: 600px) {
+  .container > img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.bg-svg {
+  background-color: #00cba9;
+  border: 0px solid #00cba9;
+}
+.fs-lg {
+  font-size: larger;
+  margin-right: 15%;
+  width: 80%;
+}
+.card {
+  width: 25%;
+  margin: 0 auto;
+}
