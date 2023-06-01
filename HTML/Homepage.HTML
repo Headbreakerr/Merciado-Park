@@ -28,7 +28,7 @@
   </head>
 
   <body>
-    <div class="sticky-top">
+    <div class="fixed-top">
       <header class="topbar">
         <div class="container">
           <div class="row">
@@ -64,7 +64,7 @@
           </div>
         </div>
       </header>
-      <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark mx-background-top-linear">
         <div class="container">
           <a
             class="navbar-brand"
@@ -102,7 +102,12 @@
               </li>
 
               <li class="nav-item">
-                <!-- <a class="nav-link" href="#">Aquarium</a> -->
+                <a class="nav-link" href="#">Aquarium</a>
+              </li>
+
+
+              <li class="nav-item m-auto">
+                
                 <div class="dropdown">
                   <button
                     class="btn btn-secondary dropdown-toggle"
@@ -112,9 +117,9 @@
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    Aquarium
+                    Activities
                   </button>
-                  <div class="dropdown-menu" aria-labelledby="triggerId">
+                  <div class="dropdown-menu mt-1" aria-labelledby="triggerId">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item disabled" href="#"
                       >Disabled action</a
@@ -125,10 +130,6 @@
                     <a class="dropdown-item" href="#">After divider action</a>
                   </div>
                 </div>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">Activities</a>
               </li>
 
               <li class="nav-item">
@@ -146,13 +147,8 @@
     <header></header>
     <main>
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
+     
+      <div class="carousel-inner hd">
         <div class="carousel-item active" data-bs-interval="10000">
           <video class="img-fluid" autoplay loop muted>
             <source src="../Videos/Carousel.mp4" type="video/mp4" />
@@ -258,7 +254,7 @@
           <span class="card_title">🎡 Majestic Ferris Wheel 🎡</span>
           <span class="card_subtitle">Behold breathtaking panoramic views that will leave you
             awe-inspired.</span>
-          </span>
+          
           <p class="card_description">
             Soar to new heights on our magnificent Ferris Wheel, offering unparalleled views and a thrilling experience
             that will leave you breathless. Witness the world from a different perspective as you embrace the gentle

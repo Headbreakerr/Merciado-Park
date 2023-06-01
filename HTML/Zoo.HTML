@@ -24,6 +24,20 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../CSS/Zoo & Aquarium.CSS" />
   </head>
   <body>
@@ -183,106 +197,20 @@
         opportunity to witness the beauty and power of the Grizzly Bear at our
         zoo!
       </p>
-      <!-- <div class="card mt-5">
-        <div
-          id="carouselVideoExample"
-          class="carousel slide carousel-fade"
-          data-mdb-ride="carousel"
-        >
-        
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-mdb-target="#carouselVideoExample"
-              data-mdb-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-mdb-target="#carouselVideoExample"
-              data-mdb-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-mdb-target="#carouselVideoExample"
-              data-mdb-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
 
-      
-          <div class="carousel-inner">
-           
-            <div class="carousel-item active">
-              <video class="img-fluid" autoplay loop muted>
-                <source
-                  src="https://mdbcdn.b-cdn.net/img/video/Tropical.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
-              </div>
-            </div>
-
-          
-            <div class="carousel-item">
-              <video class="img-fluid" autoplay loop muted>
-                <source
-                  src="https://mdbcdn.b-cdn.net/img/video/forest.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-
-           
-            <div class="carousel-item">
-              <video class="img-fluid" autoplay loop muted>
-                <source
-                  src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4"
-                  type="video/mp4"
-                />
-              </video>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-mdb-target="#carouselVideoExample"
-            data-mdb-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-mdb-target="#carouselVideoExample"
-            data-mdb-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+      <div id="owl-demo" class="owl-carousel owl-theme">
+        <div class="item">
+          <img
+            src="../Images/Zoo_Aquarium/Bear pics/bear 2.jpg"
+            alt="The Last of us"
+          />
         </div>
-      </div> -->
+        <div class="item"><img src="assets/fullimage2.jpg" alt="GTA V" /></div>
+        <div class="item">
+          <img src="assets/fullimage3.jpg" alt="Mirror Edge" />
+        </div>
+      </div>
+
       <h3 class="display-3 mt-5">2. Titanus: The Elephant</h3>
       <p>
         <b
@@ -652,5 +580,30 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+      $(document).ready(function() {
+
+            $("#owl-demo").owlCarousel({
+
+                navigation : true, // Show next and prev buttons
+
+                slideSpeed : 300,
+                paginationSpeed : 400,
+
+                items : 1,
+                itemsDesktop : false,
+                itemsDesktopSmall : false,
+                itemsTablet: false,
+                itemsMobile : false
+
+            });
+
+          });
+    </script>
   </body>
 </html>

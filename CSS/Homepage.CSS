@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(to right, #43c6ac, #f8ffae);
+  /* background: #d8d9da; */
   /* color: white; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -167,7 +168,9 @@ body {
 .tkt:hover {
   color: white;
 }
-
+.hd {
+  height: 50vh;
+}
 .tkt:active span::before {
   background: #c79600;
 }
