@@ -51,8 +51,14 @@ header .navbar {
 }
 .dropdown:hover .dropdown-menu {
   display: block;
-  background: linear-gradient(to left, #43c6ac, #f8ffae);
+  background: linear-gradient(130deg, #54d400 77%, #1b1e21 48%);
+  opacity: 0.5;
+  /* background: transparent; */
   border: 0;
+}
+.dropdown-item:hover {
+  background-color: #1b1e21 !important;
+  color: #aaa !important;
 }
 .topbar li.topbar {
   display: inline;
@@ -64,7 +70,12 @@ header .navbar {
 .topbar li.topbar:hover {
   color: #1bbde8;
 }
-
+.aaa {
+  color: #aaa !important;
+}
+.aaa:hover {
+  color: #e3e3e3 !important;
+}
 .topbar ul.info i {
   color: #131313;
   font-style: normal;
@@ -161,12 +172,15 @@ li {
 }
 
 .mx-background-top-linear {
-  background: -webkit-linear-gradient(45deg, #54d400 48%, #1b1e21 48%);
-  background: -webkit-linear-gradient(left, #54d400 48%, #1b1e21 48%);
-  background: linear-gradient(45deg, #54d400 48%, #1b1e21 48%);
+  background: -webkit-linear-gradient(45deg, #54d400 30%, #1b1e21 30%);
+  background: -webkit-linear-gradient(left, #54d400 30%, #1b1e21 30%);
+  background: linear-gradient(45deg, #54d400 30%, #1b1e21 30%);
 }
 .dropdown-toggle {
   width: 100px !important;
   background-color: transparent !important;
   border: 0px !important;
+}
+footer {
+  background: linear-gradient(to right, #382b2b, #336e96);
 }
