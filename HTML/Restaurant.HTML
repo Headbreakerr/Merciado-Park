@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Header</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/Restaurant.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="../CSS/bootstrap.css" />
     <script src="../JS/bootstrap.js"></script>
-    <script src="../js/jquery.js"></script>
+    <script src="../JS/jquery.js"></script>
 
     <link
       rel="stylesheet"
@@ -20,11 +29,9 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-
-    <link rel="stylesheet" href="../CSS/Ticket-Counter.CSS" />
   </head>
   <body>
-    <div class="sticky-top">
+    <div class="fixed-top">
       <header class="topbar">
         <div class="container">
           <div class="row">
@@ -84,8 +91,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
+              <li class="nav-item">
+                <a class="nav-link" href="/HTML/Homepage.HTML"
                   >Home
                   <span class="sr-only">(current)</span>
                 </a>
@@ -100,7 +107,9 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="/HTML/Aquarium.HTML">Aquarium</a>
+                <a class="nav-link active" href="/HTML/Aquarium.HTML"
+                  >Aquarium</a
+                >
               </li>
 
               <li class="nav-item m-auto">
@@ -159,115 +168,36 @@
         </div>
       </nav>
     </div>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col">
-          <div class="form-outline">
-            <label class="form-label" for="Name">Enter your Name</label>
-            <input type="text" id="Name" class="form-control" />
-          </div>
-        </div>
-        <div class="col">
-          <div class="form-outline">
-            <label class="form-label" for="Email">Email address</label>
-            <input type="email" class="form-control" id="Email" />
-          </div>
-        </div>
-      </div>
-      <br />
-      <div class="row">
-        <div class="col">
-          <div class="form-outline">
-            <label class="form-label">Number of People</label>
-            <input type="text" class="form-control" id="People" />
-          </div>
-        </div>
-        <div class="col">
-          <div class="form-outline">
-            <label class="form-label">Date of Arrival</label>
-            <input type="date" class="form-control" id="Date" />
-          </div>
-        </div>
-        <div class="col">
-          <div class="form-outline">
-            <label class="form-label">Your Phone Number</label>
-            <input type="text" class="form-control" id="Number" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bttn">
-      <button class="btn w-50 btn-block btn-warning btn-large">
-        Book My Tickets
-      </button>
-    </div>
-    <div class="deals">
-      <div class="h1"></div>
-      <h1 class="display-3">Bring Your Family & Get Amazing Deals</h1>
 
-      <div class="container">
-        <div class="ag-format-container">
-          <div class="ag-courses_box">
-            <div class="ag-courses_item">
-              <a href="#" class="ag-courses-item_link">
-                <div class="ag-courses-item_bg"></div>
-                <div class="ag-courses-item_title">
-                  Entry <br />3 Rides <br />2 Tokens for Merciless Zone <br />
-                  Karaoke <br />
-                  3 Meals <br />
-                  1 Train Ride
-                </div>
-                <div class="ag-courses-item_date-box">
-                  Available from:
-                  <span class="ag-courses-item_date"> 20th June, 2023 </span>
-                </div>
-                <div class="ag-courses-item_date-box">
-                  Price:
-                  <span class="ag-courses-item_date"> $79.99 </span>
-                </div>
-              </a>
-            </div>
-            <div class="ag-courses_item">
-              <a href="#" class="ag-courses-item_link">
-                <div class="ag-courses-item_bg"></div>
-                <div class="ag-courses-item_title">
-                  Entry <br />5 Rides <br />3 Tokens for Merciless Zone <br />
-                  Karaoke <br />3 Meals <br />
-                  1 Train Ride <br />
-                </div>
-                <div class="ag-courses-item_date-box">
-                  Available from:
-                  <span class="ag-courses-item_date"> 20th June, 2023 </span>
-                </div>
-                <div class="ag-courses-item_date-box">
-                  Price:
-                  <span class="ag-courses-item_date"> $99.99 </span>
-                </div>
-              </a>
-            </div>
-            <div class="ag-courses_item">
-              <a href="#" class="ag-courses-item_link">
-                <div class="ag-courses-item_bg"></div>
-                <div class="ag-courses-item_title">
-                  Entry <br />10 Rides <br />10 Tokens : Merciless Zone <br />
-                  Karaoke <br />
-                  5 Meals <br />
-                  Unlimited Train Rides
-                </div>
-                <div class="ag-courses-item_date-box">
-                  Available from:
-                  <span class="ag-courses-item_date"> 20th June, 2023 </span>
-                </div>
-                <div class="ag-courses-item_date-box">
-                  Price:
-                  <span class="ag-courses-item_date"> $149.99 </span>
-                </div>
-              </a>
-            </div>
-          </div>
+    <main>
+      <div class="cards">
+        <div class="card">
+          <i class="fa-solid fa-user-tie" style="color: #c7d411"></i>
+          <h3>Master Chefs</h3>
+          <p>The chefs of our restaurant are trained professionals.</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-utensils" style="color: #c7d411"></i>
+          <h3>Quality Food</h3>
+          <p>
+            Hygienic food is prepared for everyone to make Quality a priority.
+          </p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-cart-plus" style="color: #c7d411"></i>
+          <h3>Online Order</h3>
+          <p>With our newly Launched App, You can now order From us Online</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-headset" style="color: #c7d411"></i>
+          <h3>24/7 Service</h3>
+          <p>
+            We are open 24 hours 7 days a week so you never have to miss on our
+            services.
+          </p>
         </div>
       </div>
-    </div>
+    </main>
     <footer>
       <div class="container pt-3">
         <div class="row mt-5">
@@ -381,13 +311,7 @@
             </div>
           </div>
         </div>
-        <div class="d-flex justify-content-center"><br /><br /></div>
       </div>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

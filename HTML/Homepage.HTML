@@ -135,29 +135,20 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
               </li>
-              <li class="nav-item m-auto ">
-                
+              <li class="nav-item m-auto">
                 <div class="dropdown">
-                  <button
-                    class="btn btn-secondary aaa dropdown-toggle"
-                    type="button"
-                    id="triggerId"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                  <i class="fa fa-user"></i
-                    >
+                  <button class="btn btn-secondary aaa dropdown-toggle" type="button" id="triggerId2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user"></i>
                   </button>
-                  <div class="dropdown-menu mt-1" aria-labelledby="triggerId">
-                    <a class="dropdown-item" href="#">Register</a>
-                   
+                  <div class="dropdown-menu mt-1" aria-labelledby="triggerId2">
+                    <a class="dropdown-item" href="/HTML/Ticket Booking Counter.html">Book A Ticket</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Login</a>
-                    
+                    <a class="dropdown-item" href="#signin" data-toggle="modal" data-target="#exampleModal">Login</a>
+                 
                   </div>
                 </div>
               </li>
+              
             </ul>
           </div>
         </div>
@@ -433,7 +424,7 @@
           <ol>
             <li><b>Guarantee availability:</b> By booking in advance, you secure your spot and ensure that tickets won't be sold out.</li>
             <li><b>Save time:</b> Pre-booking allows you to skip long queues and enjoy faster entry to the amusement park.</li>
-            <li><b>Potential discounts:</b> Some parks offer early booking discounts or promotional offers, giving you the opportunity to save money on ticket prices.</li>
+            <li><b>Potential discounts:</b> We offer early booking discounts or promotional offers, giving you the opportunity to save money on ticket prices.</li>
           </ol>
           <a class="NoUnder" href="./Ticket Booking Counter.html"><button class="tkt ml-4"> BOOK MY TICKETS
             <span></span>
@@ -452,9 +443,43 @@
             changes or cancellations effortlessly.
             <b>Exclusive Offers:</b> Logging in enables you to receive exclusive offers, promotions, and updates about upcoming
             events, ensuring you don't miss out on any exciting opportunities.</p> 
-        <a class="NoUnder" href="#"> <button class="tkt"> SIGN IN
+        <a  class="NoUnder" id="signin" href="#exampleModal" data-bs-target="#exampleModal" data-bs-toggle="modal"> <button class="tkt"> SIGN IN
           <span></span>
         </button></a>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Sign In</h1>
+
+              
+            </div>
+            <div class="modal-body ">
+              <div class="login-box ">
+ 
+                <form>
+                  <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Username</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="password" name="" required="">
+                    <label>Password</label>
+                  </div><center>
+                  <a href="#signin">
+                         SEND
+                     <span></span>
+                  </a></center>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" id="modern-btn" data-bs-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -506,7 +531,7 @@
                 <a href="#" class="text-decoration-none" style="font-weight: bold;">Contact US </a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none" style="font-weight: bold;">Gallery</a>
+                <a href="/HTML/Gallery.HTML" class="text-decoration-none" style="font-weight: bold;">Gallery</a>
               </li>
             </ul>
           </div>
@@ -526,6 +551,7 @@
        <br><br>
       </div>
     </div>
+    
   </footer>
 
     <script

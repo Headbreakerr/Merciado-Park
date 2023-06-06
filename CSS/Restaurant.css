@@ -1,0 +1,97 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: ghostwhite;
+}
+
+.chicken {
+  width: 500px;
+  height: 500px;
+  background: url(/Images/Restaurant/butter-chicken.png);
+  background-size: cover;
+}
+.text {
+  width: 50%;
+}
+.text h1 {
+  font-size: 80px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.text p {
+  font-size: larger;
+  font-weight: bolder;
+}
+.book {
+  border: 1px solid rgba(255, 166, 0, 0.749);
+  width: 150px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+}
+.book:hover {
+  color: white;
+  background-color: orangered;
+  border: 0;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+}
+.card {
+  width: 200px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(4, 9, 30, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.card i {
+  color: orange;
+  font-size: 50px;
+}
+.card i,
+h3,
+p {
+  padding-top: 20px;
+}
+.card h3 {
+  font-weight: 900;
+  font-size: x-large;
+}
+.card p {
+  font-weight: 500;
+}
+.card:hover {
+  color: #fff !important;
+  background-color: #c7d411;
+}
+.card:hover,
+.fa-solid:hover {
+  color: #fff !important;
+}
+footer {
+  margin-top: 50px;
+  background-color: #000;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  footer {
+    height: 100%;
+  }
+}

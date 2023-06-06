@@ -32,12 +32,9 @@ body {
   justify-content: center;
 }
 button {
-  width: 500px;
+  /* width: 500px; */
 }
 
-/* input {
-  margin-bottom: 50px;
-} */
 @media screen and (max-width: 600px) {
   .row {
     flex-direction: column;
@@ -55,11 +52,7 @@ body {
   margin-top: 100px;
   font-family: "PT Sans", sans-serif;
 }
-.h1 {
-  display: flex;
-  justify-content: center;
-  font-weight: bolder;
-}
+
 .display-3 {
   font-weight: bolder;
   text-align: center;
@@ -203,116 +196,5 @@ body {
   }
 }
 footer {
-  margin-top: 50px;
-  background-color: #1b1e21;
-  width: 100%;
-  height: 330px;
-  display: flex;
-  justify-content: space-around;
   color: #fff;
-}
-.f-items {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 600px) {
-  .f-items {
-    flex-direction: column;
-  }
-  footer {
-    height: 100%;
-  }
-}
-
-.f-item {
-  display: flex;
-  flex-direction: column;
-  margin-left: 100px;
-}
-.f-line {
-  width: 200px;
-  height: 100px;
-  border: 1px 0 0 0 solid #54d400;
-}
-.f-head {
-  display: flex;
-  color: #54d400;
-}
-.f-head > h2 {
-  font-family: "Fasthand", cursive;
-  font-size: xx-large;
-}
-.hr {
-  padding: 0;
-  border: 1px solid #54d400;
-  width: 50px;
-  height: 1px;
-  margin: 30px 0 0 10px;
-}
-.New-ul {
-  list-style: none;
-}
-.New-ul li {
-  padding: 10px;
-  /* margin-top: 20px; */
-}
-.New-ul li::before {
-  content: "\00BB";
-}
-.New-ul > li > a {
-  text-decoration: none;
-  color: #fff;
-}
-.New-ul > li > a:hover {
-  text-decoration: underline;
-}
-.icons {
-  padding: 10px;
-}
-.icons > i {
-  padding-right: 10px;
-}
-.social {
-  margin-left: 10px;
-}
-.social-icons {
-  border: 1px solid #fff;
-  border-radius: 20px;
-  padding: 10px;
-}
-.social-icons:hover {
-  background-color: #fff;
-  color: #000 !important;
-}
-.open {
-  padding-top: 10px;
-}
-.newsletter {
-  padding-top: 10px;
-}
-#News {
-  height: 40px;
-  width: 250px;
-  padding: 20px;
-  border-radius: 20px;
-  border: 0;
-}
-::placeholder {
-  font-weight: bolder;
-}
-input[type="submit"] {
-  color: #1b1e21;
-  height: 30px;
-  width: 80px;
-  background-color: #54d400;
-  padding: 2px;
-  border: 1px solid #ffca2c;
-  margin-left: -95px;
-  border-radius: 20px;
-}
-input[type="submit"]:hover {
-  background-color: white;
-  color: #54d400;
-  font-family: "Montserrat", sans-serif;
 }
