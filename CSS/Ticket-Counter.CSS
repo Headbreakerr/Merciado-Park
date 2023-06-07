@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -61,6 +62,9 @@ body {
 .display-3:hover {
   color: #3ecd5e;
 }
+.font {
+  font-family: "Chakra Petch", sans-serif;
+}
 .ag-courses_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,7 +74,7 @@ body {
   align-items: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  /* font-family: "Fasthand"; */
+  font-family: "Chakra Petch", sans-serif;
   padding: 50px 0;
 }
 .ag-courses_item {

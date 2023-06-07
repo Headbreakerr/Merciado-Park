@@ -1,5 +1,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 
 * {
   margin: 0;
@@ -10,88 +12,142 @@
 body {
   background-color: ghostwhite;
 }
+.intro {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(/Images/Restaurant/background.jpg);
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  margin-top: 20px;
+  display: flex;
+}
+.Name {
+  color: #fff;
+  position: relative;
+  top: 35%;
+  color: #b39873;
+  font-family: "Chakra Petch", sans-serif;
+  transform: rotate(-10deg);
+}
+.Brand {
+  color: #fff;
+  font-family: "Abel", sans-serif;
+  position: relative;
+  top: 40%;
+  color: #b39873a5;
+}
+.col {
+  height: inherit;
+}
 
+.logo {
+  height: 300px;
+  width: 500px;
+  top: 33%;
+}
+.logo img {
+  height: 300px;
+  width: 400px;
+}
 .chicken {
   width: 500px;
   height: 500px;
   background: url(/Images/Restaurant/butter-chicken.png);
   background-size: cover;
 }
-.text {
-  width: 50%;
+@media screen and (max-width: 800px) {
+  .title {
+    display: none;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .menu-item {
+    padding-top: 0 !important;
+
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center !important;
+  }
+  .menu-item img {
+    width: 400px !important;
+    height: 60% !important;
+    margin: 0 !important;
+  }
 }
-.text h1 {
-  font-size: 80px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-.text p {
-  font-size: larger;
-  font-weight: bolder;
-}
-.book {
-  border: 1px solid rgba(255, 166, 0, 0.749);
-  width: 150px;
-  height: 40px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  background-color: transparent;
-  color: white;
-}
-.book:hover {
-  color: white;
-  background-color: orangered;
-  border: 0;
-}
-.cards {
+.menu-item {
+  background: #0d1a1e;
+  height: 100vh;
+  width: 100%;
+  padding-top: 10%;
   display: flex;
   justify-content: space-around;
-  margin-top: 200px;
+  flex-direction: row !important;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
 }
-.card {
-  width: 200px;
-  height: 250px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px 2px rgba(4, 9, 30, 0.5);
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+.menu-item p {
+  margin-top: 10%;
+  margin-right: 100px;
+  margin-left: 100px;
 }
-.card i {
-  color: orange;
-  font-size: 50px;
-}
-.card i,
-h3,
-p {
-  padding-top: 20px;
-}
-.card h3 {
-  font-weight: 900;
-  font-size: x-large;
-}
-.card p {
-  font-weight: 500;
-}
-.card:hover {
-  color: #fff !important;
-  background-color: #c7d411;
-}
-.card:hover,
-.fa-solid:hover {
-  color: #fff !important;
-}
-footer {
-  margin-top: 50px;
-  background-color: #000;
-  width: 100%;
-  height: 40vh;
-  display: flex;
 
+.menu-item img {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  margin-right: 100px;
+}
+.menu-item:nth-child(2n) {
+  flex-direction: row-reverse !important;
+}
+.menu-item:nth-child(2n) img {
+  margin-left: 50px;
+}
+#a {
+  background: url(/Images/eXpresso.jpg);
+}
+#a p {
+  margin-top: 60px;
+}
+#b {
+  background: url(/Images/blurry-gradient-haikei.png);
+  background-size: cover;
+}
+#b img {
+  height: 60%;
+  margin-top: 130px;
+}
+#c {
+  background: url(/Images/Restaurant\ Background.jpg);
+}
+#c img {
+  height: 80%;
+}
+.outro {
+  background: url(/Images/Restaurant/outro.jpg);
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+}
+.outro-text {
+  font-family: "Chakra Petch", sans-serif;
   color: #fff;
 }
-@media screen and (max-width: 600px) {
+.outro p {
+  text-align: center;
+}
+footer {
+  height: 280px;
+  color: #fff;
+}
+@media screen and (max-width: 800px) {
   footer {
     height: 100%;
+  }
+  .outro {
+    height: 130vh !important;
   }
 }

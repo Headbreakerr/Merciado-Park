@@ -177,7 +177,7 @@ body {
   /* object-fit: cover; */
 }
 .hd {
-  height: 60vh;
+  height: 80vh;
   width: 100%;
 }
 .tkt:active span::before {
