@@ -11,7 +11,7 @@ body {
 }
 
 .header2 {
-  margin-top: 10vh;
+  margin-top: 5vh;
   background: url(/Images/Gallery\ Top\ Image.jpg);
   background-size: cover;
   height: 100vh;
@@ -24,57 +24,57 @@ body {
   background-size: cover;
 }
 #b {
-  background: url();
+  background: url(/Images/Gallery/people\ eating\ in\ park\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #c {
-  background: url();
+  background: url(/Images/Gallery/people\ eating\ in\ park\ 3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #d {
-  background: url();
+  background: url(/Images/Gallery/people\ in\ aquarium\ 2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #e {
-  background: url();
+  background: url(/Images/Gallery/people\ in\ zoo\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #f {
-  background: url();
+  background: url(/Images/Gallery/people\ in\ aquarium\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #g {
-  background: url();
+  background: url(/Images/Gallery/people\ riding\ ride\ 3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #h {
-  background: url();
+  background: url(/Images/Gallery/people\ riding\ ride\ 2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #i {
-  background: url();
+  background: url(/Images/Gallery/people\ riding\ rides\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #j {
-  background: url();
+  background: url(/Images/Gallery/people\ in\ zoo\ 2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #k {
-  background: url();
+  background: url(/Images/Gallery/pexels-lisa-fotios-1402407.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #l {
-  background: url();
+  background: url(/Images/Gallery/pexels-ricky-esquivel-1868861.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -52,10 +52,9 @@ header .navbar {
 .dropdown:hover .dropdown-menu {
   display: block;
   background: linear-gradient(130deg, #1b1e21 77%, #54d400 48%);
-  /* opacity: 0.5; */
-  /* background: transparent; */
   border: 0;
 }
+
 .dropdown-item:hover {
   background-color: #54d400 !important;
   color: #1b1e21 !important;
@@ -68,6 +67,26 @@ header .navbar {
   padding-right: 18px;
   line-height: 52px;
   transition: all 0.3s linear;
+}
+@media screen and (max-width: 800px) {
+  .mx-background-top-linear {
+    background: linear-gradient(45deg, #54d400 50%, #1b1e21 50%);
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    height: 100% !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+}
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .topbar li.topbar:hover {

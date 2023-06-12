@@ -168,16 +168,19 @@ body {
   width: 100%;
   background: #c79600;
 }
-
+.active {
+  color: #b0b0b1 !important;
+}
 .tkt:hover {
   color: white;
 }
+
 .h-custom {
   height: 50vh;
   /* object-fit: cover; */
 }
 .hd {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
 }
 .tkt:active span::before {
@@ -208,6 +211,9 @@ footer {
   }
   .mt {
     margin-top: 10px;
+  }
+  .card {
+    width: 60% !important;
   }
 }
 .modal-body {
