@@ -204,5 +204,7 @@ li {
   border: 0px !important;
 }
 footer {
-  background: linear-gradient(to right, #382b2b, #336e96);
+  /* background: linear-gradient(to right, #382b2b, #336e96); */
+
+  background: #13274f !important;
 }

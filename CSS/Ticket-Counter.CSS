@@ -8,11 +8,15 @@
   box-sizing: border-box;
 }
 body {
-  background: url(../Images/kieran-white-ApBBVS2csbY-unsplash.jpg);
+  /* background: url(../Images/kieran-white-ApBBVS2csbY-unsplash.jpg); */
+  background: #6283c4 !important;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   color: yellow;
+}
+.py-5 {
+  background: #2e5197;
 }
 .bg {
   position: absolute;
