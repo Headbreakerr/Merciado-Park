@@ -12,7 +12,7 @@ body {
 }
 .intro {
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(/Images/Restaurant/background.jpg);
+    url(../Images/Restaurant/background.jpg);
   width: 100%;
   height: 1000px;
   background-size: cover;
@@ -51,7 +51,7 @@ body {
 .chicken {
   width: 500px;
   height: 500px;
-  background: url(/Images/Restaurant/butter-chicken.png);
+  background: url(../Images/Restaurant/butter-chicken.png);
   background-size: cover;
 }
 @media screen and (max-width: 800px) {
@@ -110,7 +110,7 @@ body {
   margin-left: 50px;
 }
 #a {
-  background: url(/Images/eXpresso.jpg);
+  background: url(../Images/eXpresso.jpg);
   background-size: cover;
 }
 #a p {
@@ -118,7 +118,7 @@ body {
   background-size: cover;
 }
 #b {
-  background: url(/Images/blurry-gradient-haikei.png);
+  background: url(../Images/blurry-gradient-haikei.png);
   background-size: cover;
 }
 #b img {
@@ -126,13 +126,13 @@ body {
   margin-top: 130px;
 }
 #c {
-  background: url(/Images/Restaurant\ Background.jpg);
+  background: url(../Images/Restaurant\ Background.jpg);
 }
 #c img {
   height: 80%;
 }
 .outro {
-  background: url(/Images/Restaurant/outro.jpg);
+  background: url(../Images/Restaurant/outro.jpg);
   width: 100%;
   height: 100vh;
   padding-top: 100px;

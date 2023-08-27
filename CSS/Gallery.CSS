@@ -12,69 +12,69 @@ body {
 
 .header2 {
   margin-top: 5vh;
-  background: url(/Images/Gallery\ Top\ Image.jpg);
+  background: url(../Images/Gallery\ Top\ Image.jpg);
   background-size: cover;
   height: 100vh;
   width: 100%;
   font-family: "Kanit", sans-serif;
 }
 #a {
-  background: url(/Images/71q6qqmmAlL._AC_UX569_.jpg);
+  background: url(../Images/71q6qqmmAlL._AC_UX569_.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #b {
-  background: url(/Images/Gallery/people\ eating\ in\ park\ 1.jpg);
+  background: url(../Images/Gallery/people\ eating\ in\ park\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #c {
-  background: url(/Images/Gallery/people\ eating\ in\ park\ 3.jpg);
+  background: url(../Images/Gallery/people\ eating\ in\ park\ 3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #d {
-  background: url(/Images/Gallery/people\ in\ aquarium\ 2.jpg);
+  background: url(../Images/Gallery/people\ in\ aquarium\ 2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #e {
-  background: url(/Images/Gallery/people\ in\ zoo\ 1.jpg);
+  background: url(../Images/Gallery/people\ in\ zoo\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #f {
-  background: url(/Images/Gallery/people\ in\ aquarium\ 1.jpg);
+  background: url(../Images/Gallery/people\ in\ aquarium\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #g {
-  background: url(/Images/Gallery/people\ riding\ ride\ 3.jpg);
+  background: url(../Images/Gallery/people\ riding\ ride\ 3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #h {
-  background: url(/Images/Gallery/people\ riding\ ride\ 2.jpg);
+  background: url(../Images/Gallery/people\ riding\ ride\ 2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #i {
-  background: url(/Images/Gallery/people\ riding\ rides\ 1.jpg);
+  background: url(../Images/Gallery/people\ riding\ rides\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #j {
-  background: url(/Images/Gallery/people\ in\ zoo\ 2.jpg);
+  background: url(../Images/Gallery/people\ in\ zoo\ 2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #k {
-  background: url(/Images/Gallery/pexels-lisa-fotios-1402407.jpg);
+  background: url(../Images/Gallery/pexels-lisa-fotios-1402407.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 #l {
-  background: url(/Images/Gallery/pexels-ricky-esquivel-1868861.jpg);
+  background: url(../Images/Gallery/pexels-ricky-esquivel-1868861.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
